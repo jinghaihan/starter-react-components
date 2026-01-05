@@ -1,0 +1,45 @@
+packages:
+  - .
+  - playground
+catalog:
+  eslint-plugin-format: ^1.1.0
+catalogs:
+  build:
+    '@vitejs/plugin-react': ^5.1.2
+    tsdown: ^0.17.2
+    unplugin-icons: ^22.5.0
+    unplugin-lightningcss: ^0.4.4
+    vite: ^7.2.7
+  cli:
+    bumpp: ^10.3.2
+    pncat: ^0.7.7
+    taze: ^19.9.2
+  dev:
+    happy-dom: ^20.0.11
+  frontend:
+    react: ^19.2.3
+    react-dom: ^19.2.3
+  lint:
+    '@antfu/eslint-config': ^6.5.1
+    '@eslint-react/eslint-plugin': ^2.5.1
+    eslint: ^9.39.1
+    eslint-plugin-react-hooks: ^7.0.1
+    eslint-plugin-react-refresh: ^0.4.26
+    lint-staged: ^16.2.7
+    simple-git-hooks: ^2.13.1
+  script:
+    tsx: ^4.21.0
+  style:
+    '@tailwindcss/postcss': ^4.1.18
+    tailwindcss: ^4.1.18
+  test:
+    vitest: ^4.0.15
+  tsc:
+    typescript: ^5.9.3
+  types:
+    '@types/node': ^24.10.2
+    '@types/react': ^19.2.7
+    '@types/react-dom': ^19.2.3
+onlyBuiltDependencies:
+  - esbuild
+  - simple-git-hooks
