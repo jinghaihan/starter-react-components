@@ -1,0 +1,85 @@
+{
+  "name": "lib-name",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.30.1",
+  "description": "Starter template for React Components.",
+  "author": "jinghaihan",
+  "license": "MIT",
+  "homepage": "https://github.com/jinghaihan/lib-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinghaihan/lib-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jinghaihan/lib-name/issues"
+  },
+  "keywords": [],
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsdown",
+    "deps": "taze major -I",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "release": "bumpp",
+    "bootstrap": "pnpm install",
+    "prepare": "simple-git-hooks",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "tailwindcss": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@tailwindcss/postcss": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "catalog:build",
+    "tsdown": "catalog:build",
+    "unplugin-icons": "catalog:build",
+    "unplugin-lightningcss": "catalog:build",
+    "vite": "catalog:build",
+    "bumpp": "catalog:dev",
+    "happy-dom": "catalog:dev",
+    "pncat": "catalog:dev",
+    "simple-git-hooks": "catalog:dev",
+    "taze": "catalog:dev",
+    "tsx": "catalog:dev",
+    "typescript": "catalog:dev",
+    "@tailwindcss/postcss": "catalog:frontend",
+    "react": "catalog:frontend",
+    "react-dom": "catalog:frontend",
+    "tailwindcss": "catalog:frontend",
+    "@eslint-react/eslint-plugin": "catalog:lint",
+    "@octohash/eslint-config": "catalog:lint",
+    "eslint": "catalog:lint",
+    "eslint-plugin-format": "catalog:lint",
+    "eslint-plugin-react-hooks": "catalog:lint",
+    "eslint-plugin-react-refresh": "catalog:lint",
+    "lint-staged": "catalog:lint",
+    "vitest": "catalog:test",
+    "@types/node": "catalog:types",
+    "@types/react": "catalog:types",
+    "@types/react-dom": "catalog:types"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

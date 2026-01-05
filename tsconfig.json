@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "lib": ["es2023", "DOM"],
+    "moduleDetection": "force",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "paths": {
+      "lib-name": ["./src/"]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "node",
+      "vite/client",
+      "unplugin-icons/types/react"
+    ],
+    "strict": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "playground", "docs"]
+}
